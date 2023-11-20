@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/main_static/assets/dol_removebg.png" />
+        <title>제주 특산물</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="static/detail_static/css/styles.css" rel="stylesheet" />
+        <link href="static/detail_static/css/calender.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/cfeddde540.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+
+    <!--여기서부터 navbar인데 어찌해야할지 모르겠네 -->
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="{% url 'main' %}">
+                        <img class="profile-img" src="static/main_static/assets/jeju_logo.png"  href="{% url 'main' %}"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="{% url 'main' %}">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'jeju' %}">Detail</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'process' %}">Process</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars">Zoom</i></button>
+                </div>
+            </nav>
+        </main>
+
+        {% include "sidenavbar.html" %}
+        <div id="layoutSidenav_content">
+      <main>
+          <div class="container">
+                  <div class="row row-cols-2 row-cols-lg-5">
+                          <div class="col-l-2 col-md-5">
+                              <div class="card bg-primary text-white mb-4">
+                                  <div class="card-body">당근</div>
+                                  <div class="card-footer d-flex align-items-center justify-content-between">
+                                      <a class="small text-white stretched-link" href="#">View Details</a>
+                                      <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-l-2 col-md-5">
+                              <div class="card bg-warning text-white mb-4">
+                                  <div class="card-body">감귤</div>
+                                  <div class="card-footer d-flex align-items-center justify-content-between">
+                                      <a class="small text-white stretched-link" href="#">View Details</a>
+                                      <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-l-2 col-md-5">
+                              <div class="card bg-success text-white mb-4">
+                                  <div class="card-body">브로콜리</div>
+                                  <div class="card-footer d-flex align-items-center justify-content-between">
+                                      <a class="small text-white stretched-link" href="#">View Details</a>
+                                      <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-l-2 col-md-5">
+                              <div class="card bg-danger text-white mb-4">
+                                  <div class="card-body">양배추</div>
+                                  <div class="card-footer d-flex align-items-center justify-content-between">
+                                      <a class="small text-white stretched-link" href="#">View Details</a>
+                                      <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-l-2 col-md-5">
+                              <div class="card bg-secondary text-white mb-4">
+                                  <div class="card-body">무</div>
+                                  <div class="card-footer d-flex align-items-center justify-content-between">
+                                      <a class="small text-white stretched-link" href="#">View Details</a>
+                                      <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+
+                        <Center><h1>Process</h1></Center><br>
+
+              <!--첫 번째 설명 칸 -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-6">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area me-1"></i>
+                                        첫번 째 제목이 들어가는 곳
+                                    </div>
+                                    <img class="profile-img" src="https://i.namu.wiki/i/6KqD6fqbpqD1UmySb9PU5b1OeS9QryEuRvL69-Ev9r5ojJPgtMwemUKJ7A3o5-zdloKSfG0-5U1fGVSCPvrZBg.webp" >
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        이건 지워도 되고 살려도 되는 그런 칸
+                                    </div>
+                                    <div class="card-body">낭비하지 마 네 시간은 은행 서둘러서 정리해 걔는 real bad 받아주면 안돼 No, you better trust me 답답해서 그래
+                                    저번에도 봤지만 너 없을 때 걘 여기저기에 눈빛을 뿌리네 아주 눈부시게 Honestly 우리 사이에 He's been totally lyin', yeah
+                                    내 생일 파티에 너만 못 온 그날 혜진이가 엄청 혼났던 그날 지원이가 여친이랑 헤어진 그날 걔는 언제나 네가 없이 그날 너무 멋있는 옷을 입고 그날 Heard him say
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+              <!-- 두 번째 설명 칸 -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-6">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area me-1"></i>
+                                        두 번째 제목이 들어가는 파트
+                                    </div>
+                                    <img class="profile-img" src="https://cdn.imweb.me/upload/S201909034d88b63749dfc/1313b7d35a963.jpg" >
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        이건 지워도 되고 살려도 되는 그런 칸
+                                    </div>
+                                    <div class="card-body">브로콜리(broccoli)는 겨자과에 속하는 짙은 녹색채소로 '녹색 꽃양배추'라고도 불린다. 브로콜리는 샐러드, 수프, 스튜 등 서양음식에 가장 많이 사용하는 채소 중 하나다. 11월부터 4월까지가 제철이지만 요즘은 사철 구별 없이 먹을 수 있다.
+                                            브로콜리를 구입할 때는 송이가 단단하면서 가운데가 볼록하게 솟아올라 있으며 줄기를 잘라낸 단면이 싱싱한 것을 골라야 한다. 꽃이 핀 것은 맛과 영양이 떨어지므로 꽃 피기 전의 브로콜리를 골라야 한다. 줄기의 영양가가 송이보다 높으며 특히 식이섬유 함량이 높으므로 버리지 말고 먹도록 한다.
+                                            가 송이 속wer)는 지중해 연안이 원산지이며, 우리나라에는 1926년 무렵에 도입되었다. 양배추보다 연하고 소화가 잘 되는 채소이며, 백색이 주류이지만 자주색이나 오렌지색인 품종도 있다. 제철은 가을부터 다음해 이른 봄까지인데, 가을부터 겨울까지 특히 맛이 좋다.
+                                            브로콜리와 콜리플라워는 평지에서 자라는 채소로 항암 작용이 강한 유황화합물이 풍부하게 들어 있다. 유황화합물은 발암 물질의 활성화와 암세포 증식을 억제한다.
+                                            [네이버 지식백과] 브로콜리 [broccoli] (파워푸드 슈퍼푸드, 2010. 12. 11., 박명윤, 이건순, 박선주)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                <!-- 세 번째 설명 칸 -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-6">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area me-1"></i>
+                                        세 번째 제목이 들어가는 파트
+                                    </div>
+                                    <img class="profile-img" src="https://img2.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202105/25/holapet/20210525081724428qquq.jpg" >
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        이건 지워도 되고 살려도 되는 그런 칸
+                                    </div>
+                                    <div class="card-body">
+                                        귀여운 강아지랍니다~
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+        {% include "footer.html" %}
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="static/detail_static/js/scripts.js"></script>
+        <script src="static/detail_static/js/calender.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="static/detail_static/assets/demo/chart-area-demo.js"></script>
+        <script src="static/detail_static/assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="static/detail_static/js/datatables-simple-demo.js"></script>
+    </body>
+</html>
