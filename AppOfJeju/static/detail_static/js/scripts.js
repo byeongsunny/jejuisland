@@ -113,21 +113,3 @@ const goToday = () => {
     date = new Date();
     renderCalender();
 };
-
-
-body{
- -ms-overflow-style: none;
- }
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-/*특정 부분 스크롤바 없애기*/
-
-.box{
-   -ms-overflow-style: none;
-}
-.box::-webkit-scrollbar{
-  display:none;
-}
